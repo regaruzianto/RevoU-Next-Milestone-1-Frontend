@@ -1,0 +1,11 @@
+.produkContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    width: 85%;
+}
+
+.imageProduct {
+    width: 391px;
+    height: 585px;
+}
