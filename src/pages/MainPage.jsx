@@ -13,7 +13,8 @@ const MainPage = ()  =>  {
       try {
         console.log("Fetching product...");
         const response = await getProductById(id);
-        setProduct(response);
+        setProduct(response.data);
+        console.log(response.data.name);
         console.log(response);
       } catch (error) {
         console.log(error);
@@ -21,9 +22,11 @@ const MainPage = ()  =>  {
     };
 
     fetchData();
-  }, []);
+  }, [id]);
 
-
+  if (!product) {
+    return <p>Loading...</p>; // Tampilkan loading jika produk belum ada
+  }
 
   return (
     <>
