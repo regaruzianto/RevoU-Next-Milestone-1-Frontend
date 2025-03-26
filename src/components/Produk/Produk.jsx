@@ -16,7 +16,6 @@ function Produk({ produkName, produkImage, produkRating, produkReview }) {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-      {/* <Headers/> */}
         <div className='flex flex-col justify-center items-center w-[389px]'>
           
             
@@ -25,8 +24,8 @@ function Produk({ produkName, produkImage, produkRating, produkReview }) {
                 <p className='max-w-[85%] pl-1 text-black text-[18px] font-semibold'>{produkName}</p>
 
                 <div className='flex items-baseline'>
-                    <StarRatings rating={produkRating} size={24}/>
-                    <p className='text-black text-[9px] ml-2'>{`${produkReview} Reviews`} </p>
+                    <StarRatings rating={produkRating || 1} size={24}/>
+                    <p className='text-black text-[9px] ml-2'>{`${produkReview || 0} Reviews`} </p>
 
                 </div>
 
@@ -36,22 +35,7 @@ function Produk({ produkName, produkImage, produkRating, produkReview }) {
 
                 </div>          
             </div>            
-        </div>
-        {/* <div >
-          <DesignerInfo/> 
-        </div>
-        <div >
-          <ProdukDetail/>
-        </div>
-        <div>
-          <ReviewPreview/>
-        </div>
-        <div>
-          <UserReview/>
-        </div> */}
-      
-      {/* <Footers/> */}
-         
+        </div>        
     </div>
   )
 }

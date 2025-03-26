@@ -4,7 +4,8 @@ import designer from '../../assets/designer.png';
 function DesignerInfo() {
 
   return (
-    <div className='mt-1 w-[347px] flex flex-col'>
+    <div className='flex flex-col justify-center items-center'>
+      <div className='mt-1 w-[347px] flex flex-col justify-center items-center'>
         <div className='w-[350px] h-[2px] bg-[#E5E5E5]'></div>
         <div className='mt-2'>
             <div className='flex justify-between mb-1'>
@@ -14,7 +15,10 @@ function DesignerInfo() {
             <img src={designer} alt="designerImage" className='-w[343px] h[61px]'/>
         </div>
 
+      </div>
+
     </div>
+
   )
 }
 
