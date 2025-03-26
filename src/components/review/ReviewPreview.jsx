@@ -15,11 +15,11 @@ function ReviewPreview({  reviewCount, value1 = 5, value2 = 5, value3 =5 }) {
         </div>
 
         <Box  py={1} borderRadius={2} minWidth={330}>
-          <Graph label="Small" value={ value1}/>
+          <Graph label="Small" value={value1}/>
         </ Box>
 
         <Box  py={1} borderRadius={2} minWidth={330}>
-          <Graph label="True to size" value={ value2}/>
+          <Graph label="True to size" value={value2}/>
         </ Box>
 
         <Box  py={1} borderRadius={2} minWidth={330}>
