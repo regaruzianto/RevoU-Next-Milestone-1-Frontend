@@ -1,25 +1,32 @@
 import React from 'react';
-import produkImage from '../../assets/reviewImage.png';
+import defaultImage from '../../assets/reviewImage.png';
 import styles from '../Produk/ProdukDetail.module.css';
 import StarRatings from './StarRatings';
 import DesignerInfo from './DesignerInfo';
 import ProdukDetail from './ProdukDetail';
+import Graph from '../review/Graph';
+import { Box, Typography } from '@mui/material';
+import ReviewPreview from '../review/ReviewPreview';
+import UserReview from '../review/UserReview';
+import Headers from '../Headers';
+import Footers from '../Footers';
 
-function Produk() {
-
+function Produk({ produkName, produkImage, produkRating, produkReview }) {
 
 
   return (
     <div className='flex flex-col justify-center items-center'>
+      {/* <Headers/> */}
         <div className='flex flex-col justify-center items-center w-[389px]'>
+          
             
-            <img src={produkImage} alt="produk-image" className={styles.imageProduct} />
+            <img src={`${produkImage}`} onError={(e) => e.target.src = defaultImage} key={produkImage} alt={produkName} className={styles.imageProduct} />
             <div className={styles.produkContainer}>
-                <p className='max-w-[85%] pl-1 text-black text-[18px] font-semibold'>Black kaftan with Embellishment</p>
+                <p className='max-w-[85%] pl-1 text-black text-[18px] font-semibold'>{produkName}</p>
 
                 <div className='flex items-baseline'>
-                    <StarRatings rating={4} size={24}/>
-                    <p className='text-black text-[9px] ml-2'> 7 Reviews </p>
+                    <StarRatings rating={produkRating} size={24}/>
+                    <p className='text-black text-[9px] ml-2'>{`${produkReview} Reviews`} </p>
 
                 </div>
 
@@ -30,12 +37,20 @@ function Produk() {
                 </div>          
             </div>            
         </div>
-        <div >
+        {/* <div >
           <DesignerInfo/> 
         </div>
         <div >
           <ProdukDetail/>
         </div>
+        <div>
+          <ReviewPreview/>
+        </div>
+        <div>
+          <UserReview/>
+        </div> */}
+      
+      {/* <Footers/> */}
          
     </div>
   )

@@ -1,11 +1,11 @@
 import "./App.css";
-import Produk from "./components/Produk/Produk";
+import MainPage from "./pages/MainPage";
 
 function App() {
 
   return (
     <div>
-      <Produk />
+      <MainPage />
     </div>
   );
 }
