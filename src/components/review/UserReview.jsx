@@ -5,7 +5,7 @@ import imageProfile from '../../assets/ProfileImage.png';
 
 function UserReview({ 
     ratings = 0, height = 0, weight = 0, bust = 0, waist = 0, hips = 0 , 
-    likes = 0, desc, userImage 
+    likes = 0, desc, userImage, picture
 
 }) {
   return (
@@ -36,6 +36,17 @@ function UserReview({
                 <p className='text-[12px]'>({likes})</p>
             </div>
 
+        {/* Tampilkan gambar review jika ada */}
+        {picture && (
+          <div className='mt-3 w-full'>
+            <img 
+              src={picture} 
+              alt="Review" 
+              className='w-full h-auto rounded-md border border-gray-200'
+            />
+          </div>
+        )}
+        
         </div>
         <p className='text-[12px] text-justify mt-4'>
            {desc}
