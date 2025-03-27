@@ -2,14 +2,7 @@ import React from 'react';
 import defaultImage from '../../assets/reviewImage.png';
 import styles from '../Produk/ProdukDetail.module.css';
 import StarRatings from './StarRatings';
-import DesignerInfo from './DesignerInfo';
-import ProdukDetail from './ProdukDetail';
-import Graph from '../review/Graph';
-import { Box, Typography } from '@mui/material';
-import ReviewPreview from '../review/ReviewPreview';
-import UserReview from '../review/UserReview';
-import Headers from '../Headers';
-import Footers from '../Footers';
+
 
 function Produk({ produkName, produkImage, produkRating, produkReview }) {
 
