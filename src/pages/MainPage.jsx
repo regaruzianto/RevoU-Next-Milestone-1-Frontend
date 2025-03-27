@@ -29,8 +29,8 @@ const MainPage = ()  =>  {
         console.log("Fetching product...");
         const response = await getProductById(id);
         setProduct(response.data);
-        const reviews = response.data.reviews;
-        const size_fit = response.data.sizeFit;
+        const reviews = await response.data.reviews;
+        const size_fit = await response.data.sizeFit;
         setReviews(reviews);
         setSizeFit(size_fit);
         setReviewCount(reviews.length);
@@ -38,7 +38,9 @@ const MainPage = ()  =>  {
         setLikes(reviews[0].ThumbUp_rate);
         setDesc(reviews[0].review_text);
         setUserImage(reviews[0].image_user);
-        
+
+        console.log(reviews[0].ThumbUp_rate);
+        console.log(likes);
         console.log(sizeFit.small);
       } catch (error) {
         console.log(error);
@@ -48,6 +50,7 @@ const MainPage = ()  =>  {
     fetchData();
   }, []);
 
+
   if (!product) {
     return <p>Loading...</p>; // Tampilkan loading jika produk belum ada
   }
@@ -55,10 +58,20 @@ const MainPage = ()  =>  {
   return (
     <div className='flex flex-col justify-center items-center'>
       <Headers/>
-      <Produk produkName={product.name} produkImage={product.image} produkRating={product.rating} produkReview={product.review} />
+      
+      <Produk produkName={product.name} produkImage={product.image} produkRating={product.rating} produkReview={reviewCount} />
+      
       <DesignerInfo />
+     
       <ProdukDetail />
-      <ReviewPreview reviewCount={reviewCount} value1={parseInt(sizeFit.small)} value2={parseInt(sizeFit.trueToSize)} value3={parseInt(sizeFit.large)} />
+     
+      <ReviewPreview reviewCount={reviewCount} 
+        value1={parseInt(sizeFit.small)} 
+        value2={parseInt(sizeFit.trueToSize)} 
+        value3={parseInt(sizeFit.large) }
+        reviewCnt={reviewCount} 
+      />
+     
       <UserReview ratings={product.rating} 
       height={sizeUser.height} 
       weight={sizeUser.weight} 
@@ -69,6 +82,7 @@ const MainPage = ()  =>  {
       desc={desc}
       userImage={userImage}
       />
+
       <Footers price={product.price}/>
     </div>
   )
