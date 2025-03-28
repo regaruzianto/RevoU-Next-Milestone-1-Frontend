@@ -1,0 +1,112 @@
+{
+    "success": true,
+    "message": "Product found",
+    "data": {
+        "_id": "67e2a83ca0bfff6e57fa634e",
+        "name": "Black Kaftan with Embellishment",
+        "price": 300000,
+        "description": "Black Kaftan with Embellishment",
+        "image": "https://ik.imagekit.io/Team1Milestone01/Image_User(Milestone%201)/product01.png?updatedAt=1742785287531",
+        "reviews": [
+            {
+                "_id": "67e2a83ca0bfff6e57fa6355",
+                "product_id": "67e2a83ca0bfff6e57fa634e",
+                "user_id": "67e2a83ca0bfff6e57fa6350",
+                "rating": 5,
+                "review_text": "This black kaftan is a wardrobe staple for me now! The quality is outstanding!",
+                "image_user": "https://ik.imagekit.io/Team1Milestone01/Image_User(Milestone%201)/user_1.png?updatedAt=1742650179412",
+                "size_user": {
+                    "bust": 88,
+                    "waist": 78,
+                    "hips": 110,
+                    "height": 165,
+                    "weight": 65
+                },
+                "ThumbUp_rate": 5,
+                "createdAt": "2025-03-25T12:57:32.969Z",
+                "updatedAt": "2025-03-25T12:57:32.969Z",
+                "__v": 0
+            },
+            {
+                "_id": "67e2a83ca0bfff6e57fa6358",
+                "product_id": "67e2a83ca0bfff6e57fa634e",
+                "user_id": "67e2a83ca0bfff6e57fa6353",
+                "rating": 1,
+                "review_text": "I'm extremely disappointed with this black kaftan. My mom said the material feels cheap and scratchy against her skin, nothing like what was advertised.",
+                "image_user": "https://ik.imagekit.io/Team1Milestone01/Image_User(Milestone%201)/user_4.png?updatedAt=1742650179715",
+                "size_user": {
+                    "bust": 91,
+                    "waist": 82,
+                    "hips": 94,
+                    "height": 160,
+                    "weight": 55
+                },
+                "ThumbUp_rate": 0,
+                "createdAt": "2025-03-25T12:57:32.973Z",
+                "updatedAt": "2025-03-25T12:57:32.973Z",
+                "__v": 0
+            },
+            {
+                "_id": "67e2a83ca0bfff6e57fa6359",
+                "product_id": "67e2a83ca0bfff6e57fa634e",
+                "user_id": "67e2a83ca0bfff6e57fa6354",
+                "rating": 1,
+                "review_text": "This black kaftan was a huge letdown. The fabric is thin and see-through, making it unwearable without additional layers.",
+                "image_user": "https://ik.imagekit.io/Team1Milestone01/Image_User(Milestone%201)/user_5.png?updatedAt=1742650179749",
+                "size_user": {
+                    "bust": 88,
+                    "waist": 78,
+                    "hips": 110,
+                    "height": 165,
+                    "weight": 65
+                },
+                "ThumbUp_rate": 0,
+                "createdAt": "2025-03-25T12:57:32.973Z",
+                "updatedAt": "2025-03-25T12:57:32.973Z",
+                "__v": 0
+            },
+            {
+                "_id": "67e2a83ca0bfff6e57fa6357",
+                "product_id": "67e2a83ca0bfff6e57fa634e",
+                "user_id": "67e2a83ca0bfff6e57fa6352",
+                "rating": 5,
+                "review_text": "I'm in love with this black kaftan! The fit is perfect, and the flowing silhouette is so flattering. The material is lightweight yet substantial, making it ideal for warmer weather. I appreciate the attention to detail in the design; it's elegant without being overly fussy. Overall, an excellent purchase that I'm thrilled with!",
+                "image_user": "https://ik.imagekit.io/Team1Milestone01/Image_User(Milestone%201)/user_3.png?updatedAt=1742650179612",
+                "size_user": {
+                    "bust": 88,
+                    "waist": 65,
+                    "hips": 110,
+                    "height": 155,
+                    "weight": 45
+                },
+                "ThumbUp_rate": 0,
+                "createdAt": "2025-03-25T12:57:32.972Z",
+                "updatedAt": "2025-03-25T12:57:32.972Z",
+                "__v": 0
+            },
+            {
+                "_id": "67e2a83ca0bfff6e57fa6356",
+                "product_id": "67e2a83ca0bfff6e57fa634e",
+                "user_id": "67e2a83ca0bfff6e57fa6351",
+                "rating": 4,
+                "review_text": "This black kaftan exceeded my expectations! The fabric feels luxurious against my skin, and the craftsmanship is impeccable.",
+                "image_user": "https://ik.imagekit.io/Team1Milestone01/Image_User(Milestone%201)/user_2.png?updatedAt=1742650179745",
+                "size_user": {
+                    "bust": 91,
+                    "waist": 82,
+                    "hips": 94,
+                    "height": 160,
+                    "weight": 55
+                },
+                "ThumbUp_rate": 2,
+                "createdAt": "2025-03-25T12:57:32.970Z",
+                "updatedAt": "2025-03-25T12:57:32.970Z",
+                "__v": 0
+            }
+        ],
+        "createdAt": "2025-03-25T12:57:32.591Z",
+        "updatedAt": "2025-03-25T17:50:50.217Z",
+        "__v": 0,
+        "rating": 3.2
+    }
+}
