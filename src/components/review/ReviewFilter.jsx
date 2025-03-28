@@ -11,11 +11,21 @@ const ReviewFilter = ({ activeFilter, onFilterChange, onRatingSelect }) => {
   };
 
   return (
-    <div className="flex gap-2 mb-4 overflow-x-auto py-2">
+    <div className="flex gap-2 mb-4 py-2">
       <Button
         variant={activeFilter === 'all' ? 'contained' : 'outlined'}
         onClick={() => onFilterChange('all')}
-        sx={{ fontSize: '12px' }}
+        sx={{ fontSize: '10px',
+          fontFamily : 'Montserrat',
+          fontWeight : activeFilter === 'all' ? 'bold' : 'normal', 
+          flex: 1, minWidth: '40px', 
+          textWrap: 'wrap', 
+          lineHeight :'12px',
+          borderRadius : '0px',
+          bgcolor: activeFilter === 'all' ? '#CDAA44' : '#D9D9D9',
+          color: activeFilter === 'all' ? '#fff' : 'inherit',
+          border : 'none' 
+        }}
       >
         All Reviews
       </Button>
@@ -23,26 +33,61 @@ const ReviewFilter = ({ activeFilter, onFilterChange, onRatingSelect }) => {
       <Button
         variant={activeFilter === 'photos' ? 'contained' : 'outlined'}
         onClick={() => onFilterChange('photos')}
-        sx={{ fontSize: '12px' }}
+        sx={{ fontSize: '10px',
+          fontFamily : 'Montserrat',
+          fontWeight : activeFilter === 'photos' ? 'bold' : 'normal', 
+          flex: 1, minWidth: '40px', 
+          textWrap: 'wrap', 
+          lineHeight :'12px',
+          borderRadius : '0px',
+          bgcolor: activeFilter === 'photos' ? '#CDAA44' : '#D9D9D9',
+          color: activeFilter === 'photos' ? '#fff' : 'inherit',
+          border : 'none' 
+        }}
       >
-        Photos/Videos
+        Photos/ Videos
       </Button>
 
       <Button
         variant={activeFilter === 'newest' ? 'contained' : 'outlined'}
         onClick={() => onFilterChange('newest')}
-        sx={{ fontSize: '12px' }}
+        sx={{ 
+          fontSize: '10px',
+          fontFamily : 'Montserrat',
+          fontWeight : activeFilter === 'newest' ? 'bold' : 'normal', 
+          flex: 1, minWidth: '40px', 
+          textWrap: 'wrap', 
+          lineHeight :'12px',
+          borderRadius : '0px',
+          bgcolor: activeFilter === 'newest' ? '#CDAA44' : '#D9D9D9',
+          color: activeFilter === 'newest' ? '#fff' : 'inherit',
+          border : 'none' 
+        }}
       >
         Newest
       </Button>
 
-      <div>
+      <div className='flex-1'>
         <Button
           variant={activeFilter === 'rating' ? 'contained' : 'outlined'}
           onClick={(e) => setAnchorEl(e.currentTarget)}
-          sx={{ fontSize: '12px' }}
+          sx={{ 
+            fontSize: '10px',
+            fontFamily : 'Montserrat',
+            fontWeight : activeFilter === 'rating' ? 'bold' : 'normal',
+            fontSize: '10px',
+            flex: 1,
+            minWidth: '40px',
+            minHeight: '36px',
+            textWrap: 'wrap',
+            lineHeight :'12px',
+            borderRadius : '0px',
+            bgcolor: activeFilter === 'rating' ? '#CDAA44' : '#D9D9D9',
+            color: activeFilter === 'rating' ? '#fff' : 'inherit',
+            border : 'none'    
+          }}
         >
-          Rating
+          Rating:All
         </Button>
         <Menu
           anchorEl={anchorEl}

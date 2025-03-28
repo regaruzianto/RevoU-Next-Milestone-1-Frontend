@@ -67,22 +67,22 @@ function UserReview({
             </div>
 
         {/* Tampilkan gambar review jika ada */}
-        {picture && (
-          <div className='mt-3 w-full'>
-            <img 
-              src={picture} 
-              alt="Review" 
-              className='w-full h-auto rounded-md border border-gray-200'
-            />
-          </div>
-        )}
-        
+
         </div>
         <p className='text-[12px] text-justify mt-4'>
            {desc}
         </p>
 
         </div>
+        {picture && (
+          <div className='mt-1 w-full ml-2'>
+            <img 
+              src={picture} 
+              alt="Review" 
+              className='w-[50px] h-[50px]  border border-gray-200'
+            />
+          </div>
+        )}
     </div>
 
   )
